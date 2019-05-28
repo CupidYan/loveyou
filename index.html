@@ -1,22 +1,26 @@
 <html>
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
-    <script>
-        document.write("<br><br><br>" + "55225555552225555552255222255222555522255222255" + '<br>' +
-            "55255555555255555555255222255225522552255222255" + '<br>' +
-            "55225555555555555552255222255255222255255222255" + '<br>' +
-            "55222255555555555522222555522255222255255222255" + '<br>' +
-            "55222222555555552222222255222255222255255222255" + '<br>' +
-            "55222222225555222222222255222225522552255222255" + '<br>' +
-            "55222222222552222222222255222222555522225555552" +
-            '<br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><big></big></strong>'
-            );
-    </script>
+<script type="text/javascript">
+function show_confirm()
+{
+const one = confirm('first confirm')
+
+  if (one) {
+    const two = confirm('second confirm')
+
+    if (!two) {
+      const three = confirm('third confirm')
+
+      confirm('third confirm was ' + three)
+    }
+  }
+}
+
+</script>
 </head>
-
 <body>
-    
-</body>
 
+<input type="button" onclick="show_confirm()" value="Show a confirm box" />
+
+</body>
 </html>
